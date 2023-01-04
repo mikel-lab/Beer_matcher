@@ -56,15 +56,87 @@
 		24D9B15C2965A13C0077E844 /* Beer_matcher */ = {
 			isa = PBXGroup;
 			children = (
-				24D9B15D2965A13C0077E844 /* AppDelegate.swift */,
-				24D9B15F2965A13C0077E844 /* SceneDelegate.swift */,
-				24D9B1612965A13C0077E844 /* ViewController.swift */,
-				24D9B1632965A13C0077E844 /* Main.storyboard */,
-				24D9B1662965A13D0077E844 /* Assets.xcassets */,
-				24D9B1682965A13D0077E844 /* LaunchScreen.storyboard */,
+				24D9B1742965A5310077E844 /* App */,
+				24D9B1732965A51E0077E844 /* Resources */,
+				24D9B1722965A5160077E844 /* Domain */,
+				24D9B1712965A50B0077E844 /* Vistas */,
 				24D9B16B2965A13D0077E844 /* Info.plist */,
 			);
 			path = Beer_matcher;
+			sourceTree = "<group>";
+		};
+		24D9B1712965A50B0077E844 /* Vistas */ = {
+			isa = PBXGroup;
+			children = (
+				24D9B1792965A6ED0077E844 /* LaunchView */,
+				24D9B1782965A6CE0077E844 /* MainView */,
+				24D9B1772965A6C20077E844 /* SplashView */,
+			);
+			path = Vistas;
+			sourceTree = "<group>";
+		};
+		24D9B1722965A5160077E844 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				24D9B1762965A6970077E844 /* Network */,
+				24D9B1752965A68A0077E844 /* Models */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		24D9B1732965A51E0077E844 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				24D9B1662965A13D0077E844 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		24D9B1742965A5310077E844 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				24D9B15D2965A13C0077E844 /* AppDelegate.swift */,
+				24D9B15F2965A13C0077E844 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		24D9B1752965A68A0077E844 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		24D9B1762965A6970077E844 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		24D9B1772965A6C20077E844 /* SplashView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SplashView;
+			sourceTree = "<group>";
+		};
+		24D9B1782965A6CE0077E844 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				24D9B1612965A13C0077E844 /* ViewController.swift */,
+				24D9B1632965A13C0077E844 /* Main.storyboard */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		24D9B1792965A6ED0077E844 /* LaunchView */ = {
+			isa = PBXGroup;
+			children = (
+				24D9B1682965A13D0077E844 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
