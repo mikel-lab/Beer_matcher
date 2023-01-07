@@ -13,6 +13,8 @@
 		24D9B1652965A13C0077E844 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24D9B1632965A13C0077E844 /* Main.storyboard */; };
 		24D9B1672965A13D0077E844 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24D9B1662965A13D0077E844 /* Assets.xcassets */; };
 		24D9B16A2965A13D0077E844 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24D9B1682965A13D0077E844 /* LaunchScreen.storyboard */; };
+		24D9B17C296824E40077E844 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D9B17A296824E40077E844 /* SplashViewController.swift */; };
+		24D9B17D296824E40077E844 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24D9B17B296824E40077E844 /* SplashViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		24D9B1662965A13D0077E844 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24D9B1692965A13D0077E844 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24D9B16B2965A13D0077E844 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24D9B17A296824E40077E844 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		24D9B17B296824E40077E844 /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +122,8 @@
 		24D9B1772965A6C20077E844 /* SplashView */ = {
 			isa = PBXGroup;
 			children = (
+				24D9B17A296824E40077E844 /* SplashViewController.swift */,
+				24D9B17B296824E40077E844 /* SplashViewController.xib */,
 			);
 			path = SplashView;
 			sourceTree = "<group>";
@@ -200,6 +206,7 @@
 				24D9B16A2965A13D0077E844 /* LaunchScreen.storyboard in Resources */,
 				24D9B1672965A13D0077E844 /* Assets.xcassets in Resources */,
 				24D9B1652965A13C0077E844 /* Main.storyboard in Resources */,
+				24D9B17D296824E40077E844 /* SplashViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +220,7 @@
 				24D9B1622965A13C0077E844 /* ViewController.swift in Sources */,
 				24D9B15E2965A13C0077E844 /* AppDelegate.swift in Sources */,
 				24D9B1602965A13C0077E844 /* SceneDelegate.swift in Sources */,
+				24D9B17C296824E40077E844 /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,7 +372,7 @@
 				INFOPLIST_FILE = Beer_matcher/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -392,7 +400,7 @@
 				INFOPLIST_FILE = Beer_matcher/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
