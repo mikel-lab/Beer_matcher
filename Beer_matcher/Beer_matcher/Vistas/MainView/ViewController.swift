@@ -11,10 +11,14 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var busqueda: UISearchBar!
     
+    let searchController = UISearchController()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        title = "Búsqueda de cervezas"
+        navigationItem.searchController = searchController
     }
 
 
