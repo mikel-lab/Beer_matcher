@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		244EDEB9296F3B71008F01D6 /* NetworkingProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244EDEB8296F3B71008F01D6 /* NetworkingProvider.swift */; };
+		244EDEBC296F3CF7008F01D6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 244EDEBB296F3CF7008F01D6 /* Alamofire */; };
 		24D9B15E2965A13C0077E844 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D9B15D2965A13C0077E844 /* AppDelegate.swift */; };
 		24D9B1602965A13C0077E844 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D9B15F2965A13C0077E844 /* SceneDelegate.swift */; };
 		24D9B1622965A13C0077E844 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D9B1612965A13C0077E844 /* ViewController.swift */; };
@@ -16,10 +18,10 @@
 		24D9B17C296824E40077E844 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D9B17A296824E40077E844 /* SplashViewController.swift */; };
 		24D9B17D296824E40077E844 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24D9B17B296824E40077E844 /* SplashViewController.xib */; };
 		24D9B182296D79AF0077E844 /* BeerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D9B181296D79AF0077E844 /* BeerModel.swift */; };
-		24D9B189296D9B2B0077E844 /* BeerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D9B188296D9B2B0077E844 /* BeerTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		244EDEB8296F3B71008F01D6 /* NetworkingProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingProvider.swift; sourceTree = "<group>"; };
 		24D9B15A2965A13C0077E844 /* Beer_matcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beer_matcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24D9B15D2965A13C0077E844 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24D9B15F2965A13C0077E844 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,7 +33,6 @@
 		24D9B17A296824E40077E844 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		24D9B17B296824E40077E844 /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
 		24D9B181296D79AF0077E844 /* BeerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerModel.swift; sourceTree = "<group>"; };
-		24D9B188296D9B2B0077E844 /* BeerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				244EDEBC296F3CF7008F01D6 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +122,7 @@
 		24D9B1762965A6970077E844 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				244EDEB8296F3B71008F01D6 /* NetworkingProvider.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -154,7 +157,6 @@
 		24D9B187296D9ABE0077E844 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				24D9B188296D9B2B0077E844 /* BeerTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -175,6 +177,9 @@
 			dependencies = (
 			);
 			name = Beer_matcher;
+			packageProductDependencies = (
+				244EDEBB296F3CF7008F01D6 /* Alamofire */,
+			);
 			productName = Beer_matcher;
 			productReference = 24D9B15A2965A13C0077E844 /* Beer_matcher.app */;
 			productType = "com.apple.product-type.application";
@@ -203,6 +208,9 @@
 				Base,
 			);
 			mainGroup = 24D9B1512965A13C0077E844;
+			packageReferences = (
+				244EDEBA296F3CF7008F01D6 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 24D9B15B2965A13C0077E844 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,8 +240,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				24D9B1622965A13C0077E844 /* ViewController.swift in Sources */,
-				24D9B189296D9B2B0077E844 /* BeerTableViewCell.swift in Sources */,
 				24D9B15E2965A13C0077E844 /* AppDelegate.swift in Sources */,
+				244EDEB9296F3B71008F01D6 /* NetworkingProvider.swift in Sources */,
 				24D9B1602965A13C0077E844 /* SceneDelegate.swift in Sources */,
 				24D9B182296D79AF0077E844 /* BeerModel.swift in Sources */,
 				24D9B17C296824E40077E844 /* SplashViewController.swift in Sources */,
@@ -454,6 +462,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		244EDEBA296F3CF7008F01D6 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		244EDEBB296F3CF7008F01D6 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 244EDEBA296F3CF7008F01D6 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 24D9B1522965A13C0077E844 /* Project object */;
 }

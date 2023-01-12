@@ -1,6 +1,6 @@
 import Foundation
 
-struct Response: Codable {
+struct Result: Codable {
     let name: String
 
     enum CodingKeys: String, CodingKey {
