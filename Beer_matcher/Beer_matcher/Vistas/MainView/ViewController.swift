@@ -7,11 +7,11 @@ class ViewController: UIViewController {
             tableView?.reloadData()
         }
     }
-
+    
     @IBOutlet weak var busqueda: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView?.dataSource = self
@@ -19,18 +19,18 @@ class ViewController: UIViewController {
         busqueda.delegate = self
         
     }
-    //añadir el parámetro de comida
-    func birras(){
-        //Llamamos cuando cambie el texto de la searchbar
-        NetworkingProvider.shared.getBeersWithFood { beers in
+    
+    func birras(comida: String){
+        
+        NetworkingProvider.shared.getBeersWithFood(comida: comida) { beers in
             self.cañas = beers
             print(beers)
         } failure: { error in
             print(error ?? "Ha habido un error")
         }
-
+        
     }
-
+    
 }
 
 extension ViewController: UITableViewDataSource {
@@ -48,13 +48,13 @@ extension ViewController: UITableViewDataSource {
             
             cell.configureViews(beerName: caña.name)
         }
-       
+        
         
         
         return cell
     }
     
-   
+    
     
 }
 
@@ -62,11 +62,12 @@ extension ViewController: UITableViewDelegate {
     //Función lógica detalle
 }
 
+
 extension ViewController: UISearchBarDelegate{
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        //Extraer el string de la searchbar
-        //Pasar el string por parámetro a birras(comida: String)
-        birras()
-        print("hello")
+        
+        let textoBusqueda = busqueda.text
+        birras(comida: textoBusqueda!)
+        
     }
 }
