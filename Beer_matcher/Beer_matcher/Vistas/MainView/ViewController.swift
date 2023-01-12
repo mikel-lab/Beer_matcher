@@ -1,19 +1,23 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var cañas: [Result] = [] {
+        didSet {
+            tableView?.reloadData()
+        }
+    }
 
     @IBOutlet weak var busqueda: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     
 
-    
-    var cañas: [Result] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView?.dataSource = self
         tableView?.delegate = self
+        busqueda.delegate = self
         
-        //birras()
     }
     //añadir el parámetro de comida
     func birras(){
@@ -32,14 +36,20 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 5
+        return cañas.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "BeerTableViewCell",
                                                        for: indexPath) as? BeerTableViewCell else {return UITableViewCell()}
         
-        cell.configureViews(beerName: "Franziskaner")
+        if cañas.count > indexPath.row {
+            let caña = cañas[indexPath.row]
+            
+            cell.configureViews(beerName: caña.name)
+        }
+       
+        
         
         return cell
     }
@@ -52,4 +62,11 @@ extension ViewController: UITableViewDelegate {
     //Función lógica detalle
 }
 
-
+extension ViewController: UISearchBarDelegate{
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        //Extraer el string de la searchbar
+        //Pasar el string por parámetro a birras(comida: String)
+        birras()
+        print("hello")
+    }
+}
