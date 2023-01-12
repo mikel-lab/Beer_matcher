@@ -1,23 +1,19 @@
-//
-//  ViewController.swift
-//  Beer_matcher
-//
-//  Created by Mikel Cobian on 4/1/23.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
 
     @IBOutlet weak var busqueda: UISearchBar!
+    @IBOutlet weak var tableView: UITableView!
     
-    //Añadir toda la mierda de las tablas y su puta madre para ver si se ve algo
+
     
     var cañas: [Result] = []
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView?.dataSource = self
+        tableView?.delegate = self
         
-        birras()
+        //birras()
     }
     //añadir el parámetro de comida
     func birras(){
@@ -32,4 +28,28 @@ class ViewController: UIViewController {
     }
 
 }
+
+extension ViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return 5
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "BeerTableViewCell",
+                                                       for: indexPath) as? BeerTableViewCell else {return UITableViewCell()}
+        
+        cell.configureViews(beerName: "Franziskaner")
+        
+        return cell
+    }
+    
+   
+    
+}
+
+extension ViewController: UITableViewDelegate {
+    //Función lógica detalle
+}
+
 

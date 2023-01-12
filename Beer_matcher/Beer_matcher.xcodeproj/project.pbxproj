@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		244EDEB9296F3B71008F01D6 /* NetworkingProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244EDEB8296F3B71008F01D6 /* NetworkingProvider.swift */; };
 		244EDEBC296F3CF7008F01D6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 244EDEBB296F3CF7008F01D6 /* Alamofire */; };
+		244EDEBE296FFDF6008F01D6 /* BeerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244EDEBD296FFDF6008F01D6 /* BeerTableViewCell.swift */; };
 		24D9B15E2965A13C0077E844 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D9B15D2965A13C0077E844 /* AppDelegate.swift */; };
 		24D9B1602965A13C0077E844 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D9B15F2965A13C0077E844 /* SceneDelegate.swift */; };
 		24D9B1622965A13C0077E844 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D9B1612965A13C0077E844 /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		244EDEB8296F3B71008F01D6 /* NetworkingProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingProvider.swift; sourceTree = "<group>"; };
+		244EDEBD296FFDF6008F01D6 /* BeerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerTableViewCell.swift; sourceTree = "<group>"; };
 		24D9B15A2965A13C0077E844 /* Beer_matcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beer_matcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24D9B15D2965A13C0077E844 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24D9B15F2965A13C0077E844 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 		24D9B187296D9ABE0077E844 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				244EDEBD296FFDF6008F01D6 /* BeerTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24D9B1622965A13C0077E844 /* ViewController.swift in Sources */,
+				244EDEBE296FFDF6008F01D6 /* BeerTableViewCell.swift in Sources */,
 				24D9B15E2965A13C0077E844 /* AppDelegate.swift in Sources */,
 				244EDEB9296F3B71008F01D6 /* NetworkingProvider.swift in Sources */,
 				24D9B1602965A13C0077E844 /* SceneDelegate.swift in Sources */,
